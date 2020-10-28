@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="index.css">
+<body>
+    <h1>Circle Rasterization</h1>
+    <div class="info">
+        <span>Summar Raja</span><br/>
+        <span>FA17-BSE-131</span>
+    </div>
+    <div class="container">
+        <div class="polar">
+            <div class="inputs">
+                <h3>Polar Coordinates Rasterization</h3>
+                <span>Center(x,y):</span>
+                <input id="px" type="number" min="0" max="500" step="1" />
+                <input id="py" type="number" min="0" max="500" step="1"/>
+                <span>&ensp;θ:</span>
+                <input id="theta" type="number" min="0" max="360" step="1"/>
+            </br>
+                <span>Radius:&emsp;&ensp;</span>
+                <input id="pr" type="number" min="0" max="250" step="1" />
+
+                <button onclick="drawPolarCircle()">Plot</button>
+        </br>
+                <span id="ppt">&ensp;</span>
+            </div>
+            <canvas id="polarCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">
+            </canvas>
+        </div>
+        <div class=mid-point>
+            <div>
+                <h3>Mid-point Rasterization</h3>
+                <span>Center(x,y):</span>
+                <input id="mx" type="number" min="0" max="500" step="1" />
+                <input id="my" type="number" min="0" max="500" step="1"/>
+                <br/>
+                <span>Radius:&emsp;&ensp;</span>
+                <input id="mr" type="number" min="0" max="250" step="1" />
+                <button onclick="drawMidPointCircle()">Plot</button>
+                <br/>
+                <span id="mpt">&emsp;</span>
+            </div>
+            <canvas id="midpointCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">
+            </canvas>
+        </div>
+    </div>
+
+    <script src="index.js">
+    </script>
+</body>
+</html>
